@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ProductTCell" rowHeight="251" id="KGk-i7-Jjw" customClass="ProductTCell" customModule="Task_Nidhi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="251"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="251"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqf-Sm-vxc">
+                        <rect key="frame" x="10" y="0.0" width="300" height="241"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-HT-RfR">
+                                <rect key="frame" x="8" y="8" width="284" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FNP-2z-QQL">
+                                <rect key="frame" x="8" y="39" width="284" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="8cV-2n-lD6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DgM-kN-vKT">
+                                <rect key="frame" x="8" y="210" width="284" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TF0-eU-K19">
+                                <rect key="frame" x="8.0000000000000036" y="179" width="54.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKq-om-Mgw">
+                                <rect key="frame" x="172" y="173" width="120" height="33"/>
+                                <fontDescription key="fontDescription" name="Menlo-Bold" family="Menlo" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add to Cart"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="i6L-HT-RfR" firstAttribute="top" secondItem="lqf-Sm-vxc" secondAttribute="top" constant="8" id="4Tc-Dl-P2o"/>
+                            <constraint firstAttribute="trailing" secondItem="FNP-2z-QQL" secondAttribute="trailing" constant="8" id="4p5-73-m7T"/>
+                            <constraint firstItem="MKq-om-Mgw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="TF0-eU-K19" secondAttribute="trailing" constant="25" id="8L6-0g-WJK"/>
+                            <constraint firstItem="FNP-2z-QQL" firstAttribute="leading" secondItem="lqf-Sm-vxc" secondAttribute="leading" constant="8" id="B0j-VX-75i"/>
+                            <constraint firstItem="DgM-kN-vKT" firstAttribute="leading" secondItem="lqf-Sm-vxc" secondAttribute="leading" constant="8" id="FPI-cP-jS9"/>
+                            <constraint firstAttribute="trailing" secondItem="DgM-kN-vKT" secondAttribute="trailing" constant="8" id="HWg-YC-1Ra"/>
+                            <constraint firstAttribute="trailing" secondItem="i6L-HT-RfR" secondAttribute="trailing" constant="8" id="Otv-f5-dMg"/>
+                            <constraint firstAttribute="trailing" secondItem="MKq-om-Mgw" secondAttribute="trailing" constant="8" id="RNP-rj-Ahr"/>
+                            <constraint firstAttribute="bottom" secondItem="DgM-kN-vKT" secondAttribute="bottom" constant="10" id="RWv-x5-qwn"/>
+                            <constraint firstItem="TF0-eU-K19" firstAttribute="leading" secondItem="lqf-Sm-vxc" secondAttribute="leading" constant="8" id="Ty5-h7-03j"/>
+                            <constraint firstItem="DgM-kN-vKT" firstAttribute="top" secondItem="TF0-eU-K19" secondAttribute="bottom" constant="10" id="UKR-jh-aYU"/>
+                            <constraint firstItem="i6L-HT-RfR" firstAttribute="leading" secondItem="lqf-Sm-vxc" secondAttribute="leading" constant="8" id="WYQ-bv-sEG"/>
+                            <constraint firstItem="FNP-2z-QQL" firstAttribute="top" secondItem="i6L-HT-RfR" secondAttribute="bottom" constant="10" id="gQc-iw-34A"/>
+                            <constraint firstItem="MKq-om-Mgw" firstAttribute="centerY" secondItem="TF0-eU-K19" secondAttribute="centerY" id="hr0-q8-XLi"/>
+                            <constraint firstItem="TF0-eU-K19" firstAttribute="top" secondItem="FNP-2z-QQL" secondAttribute="bottom" constant="10" id="xkb-dg-dwr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="lqf-Sm-vxc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="7A0-CR-rKq"/>
+                    <constraint firstAttribute="trailing" secondItem="lqf-Sm-vxc" secondAttribute="trailing" constant="10" id="Vsf-hc-5U7"/>
+                    <constraint firstItem="lqf-Sm-vxc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aWg-3a-KwW"/>
+                    <constraint firstAttribute="bottom" secondItem="lqf-Sm-vxc" secondAttribute="bottom" constant="10" id="gEC-Hh-kSg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnAddToCart" destination="MKq-om-Mgw" id="lon-pU-uni"/>
+                <outlet property="imgProduct" destination="FNP-2z-QQL" id="iL6-F0-uv0"/>
+                <outlet property="lblDescription" destination="DgM-kN-vKT" id="ZcJ-ch-7rK"/>
+                <outlet property="lblPrice" destination="TF0-eU-K19" id="6h4-iK-h7N"/>
+                <outlet property="lblTitle" destination="i6L-HT-RfR" id="acm-jI-gPk"/>
+            </connections>
+            <point key="canvasLocation" x="59.541984732824424" y="92.605633802816911"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
